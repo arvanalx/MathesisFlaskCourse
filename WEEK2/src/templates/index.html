@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+    Αρχική
+{% endblock title %}
+
+
+{% block content %}
+    <h3 class="main-article-title">Καλημέρα
+        {% if myname and myname != 'Alex' %}
+            {{ myname }}
+        {% elif myname == 'Alex' %}
+            Αλέξανδρε
+        {% else %}
+            σε όλους
+        {% endif %}
+    </h3>
+{% endblock content %}
+
+
